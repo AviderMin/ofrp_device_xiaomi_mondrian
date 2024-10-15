@@ -1,6 +1,7 @@
 #!/system/bin/sh
 
-if [ ! -f /proc/tp_lockdown_info ]; then
+sleep 2
+if [ ! -d /proc/goodix_ts ]; then
 rmmod goodix_core
 mount /vendor_dlkm
 insmod /vendor_dlkm/lib/modules/goodix_core.ko
