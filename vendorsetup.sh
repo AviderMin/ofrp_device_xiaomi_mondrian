@@ -40,6 +40,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_USE_TAR_BINARY=1
     export FOX_ENABLE_APP_MANAGER=1
     export FOX_USE_NANO_EDITOR=1
+    export FOX_VIRTUAL_AB_DEVICE=1
 else
 	if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
 		echo "I: This script requires bash. Not processing the $FDEVICE $(basename $0)"
