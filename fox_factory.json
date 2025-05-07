@@ -2,7 +2,7 @@
     "fox_branch": "fox_12.1",
     "device_tree_path": "device/xiaomi/mondrian",
     "product": "twrp_mondrian",
-    "release": null,
+    "aosp_release": null,
     "variant": "eng",
     "make_target": "recoveryimage",
     "dependencies": [
