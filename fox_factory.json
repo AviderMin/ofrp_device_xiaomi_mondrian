@@ -5,11 +5,5 @@
     "aosp_release": null,
     "variant": "eng",
     "make_target": "recoveryimage",
-    "dependencies": [
-        {
-            "repository": "https://github.com/mondrian-development/android_kernel_xiaomi_mondrian",
-            "path": "kernel/xiaomi",
-            "branch": "mondrian-s-oss"
-        }
-    ]
+    "dependencies": []
 }
