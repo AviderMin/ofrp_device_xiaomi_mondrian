@@ -1,0 +1,15 @@
+{
+    "fox_branch": "fox_12.1",
+    "device_tree_path": "device/xiaomi/mondrian",
+    "product": "twrp_mondrian",
+    "release": null,
+    "variant": "eng",
+    "make_target": "recoveryimage",
+    "dependencies": [
+        {
+            "repository": "https://github.com/mondrian-development/android_kernel_xiaomi_mondrian",
+            "path": "kernel/xiaomi",
+            "branch": "mondrian-s-oss"
+        }
+    ]
+}
