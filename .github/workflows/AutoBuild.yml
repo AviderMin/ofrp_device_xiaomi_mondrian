@@ -27,7 +27,7 @@ jobs:
       DEVICE_COMMON_TREE: https://gitlab.com/OrangeFox/device/sm84xx-common
       DEVICE_TREE_BRANCH: fox_12.1
       DEVICE_PATH: device/xiaomi/mondrian
-      DEVICE_COMMON: device/xiaomi/sm84xx-common
+      DEVICE_COMMON_PATH: device/xiaomi/sm84xx-common
       DEVICE_NAME: mondrian
       BUILD_TARGET: recovery
       USE_CCACHE: true
