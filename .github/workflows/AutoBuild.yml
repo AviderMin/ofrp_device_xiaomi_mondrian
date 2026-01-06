@@ -24,8 +24,10 @@ jobs:
       # ===== 构建参数 =====
       MANIFEST_BRANCH: 12.1
       DEVICE_TREE: https://github.com/AviderMin/ofrp_device_xiaomi_mondrian
+      DEVICE_COMMON_TREE: https://gitlab.com/OrangeFox/device/sm84xx-common
       DEVICE_TREE_BRANCH: fox_12.1
       DEVICE_PATH: device/xiaomi/mondrian
+      DEVICE_COMMON: device/xiaomi/sm84xx-common
       DEVICE_NAME: mondrian
       BUILD_TARGET: recovery
       USE_CCACHE: true
@@ -88,6 +90,7 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${MANIFEST_BRANCH}
           git clone ${DEVICE_TREE} -b ${DEVICE_TREE_BRANCH} ${DEVICE_PATH}
+          git clone ${DEVICE_COMMON_TREE} -b ${DEVICE_TREE_BRANCH} ${DEVICE_COMMON_PATH}
           cd ${DEVICE_PATH}
           echo "COMMIT_ID=$(git rev-parse HEAD)" >> $GITHUB_ENV
 
